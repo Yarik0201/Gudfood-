@@ -37,9 +37,6 @@ xmlport 50100 "Export Gudfood Order"
                 fieldelement(TotalAmount; GudfoodOrderHeader."Total Amount")
                 {
                 }
-                fieldelement(NoSeries; GudfoodOrderHeader."No. Series")
-                {
-                }
                 tableelement(GudfoodOrderLine; "Gudfood Order Line")
                 {
                     LinkTable = GudfoodOrderHeader;

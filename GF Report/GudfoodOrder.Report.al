@@ -33,7 +33,7 @@ report 50100 "Gudfood Order"
             {
                 DataItemLinkReference = GudfoodOrderHeader;
                 DataItemLink = "Order No." = field("No.");
-                DataItemTableView = sorting("Order No.");
+                //DataItemTableView = sorting("Order No.");
 
                 column(Item_No_; "Item No.")
                 {

@@ -10,7 +10,7 @@ enum 50100 "Gudfood Item Type"
     }
     value(1; Salat)
     {
-        Caption = 'Salat';
+        Caption = 'Salad';
     }
     value(2; Burger)
     {

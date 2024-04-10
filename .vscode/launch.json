@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://MyDevContainer",
+            "server": "http://locapps2",
             "serverInstance": "BC",
             "authentication": "UserPassword",
             "startupObjectId": 50107,

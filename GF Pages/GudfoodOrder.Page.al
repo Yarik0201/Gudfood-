@@ -8,6 +8,7 @@ page 50103 "Gudfood Order"
     SourceTable = "Gudfood Order Header";
     UsageCategory = None;
 
+
     layout
     {
         area(content)
@@ -96,7 +97,11 @@ page 50103 "Gudfood Order"
                     Caption = 'Export Order';
                     Image = Export;
                     ToolTip = 'Export document';
-                    RunObject = xmlport "Export Gudfood Order";
+                    trigger OnAction()
+                    begin
+                        Rec.SetRecFilter();
+                        Xmlport.Run(Xmlport::"Export Gudfood Order", false, false, Rec);
+                    end;
 
                 }
             }

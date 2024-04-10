@@ -10,7 +10,7 @@ table 50102 "Gudfood Order Header"
             Caption = 'No.';
             DataClassification = CustomerContent;
             NotBlank = false;
-            Editable = false;
+
             trigger OnValidate()
             begin
                 SalesSetup.Get();

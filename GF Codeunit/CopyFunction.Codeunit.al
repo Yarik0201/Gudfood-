@@ -34,10 +34,13 @@ codeunit 50104 "Copy Function"
             GudfoodOrderLine.SetRange("Order No.", GudfoodOrderHeader."No.");
             GudfoodOrderLine.DeleteAll();
         end;
+        Message(Text1);
     end;
 
     var
         GudfoodOrderLine: Record "Gudfood Order Line";
         PostedGudfoodOrderLine: Record "Posted Gudfood Order Line";
         PostedGudfoodOrderHeader: Record "Posted Gudfood Order Header";
+
+        Text1: Label 'The order successfully posted!';
 }
