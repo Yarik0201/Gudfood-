@@ -54,7 +54,7 @@ page 50105 "Gudfood Item List"
         {
             part(PictureFactbox; "Gudfood Item Picture")
             {
-
+                SubPageLink = Code = field(Code);
             }
         }
     }

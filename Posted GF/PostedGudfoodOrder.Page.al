@@ -6,7 +6,7 @@ page 50109 "Posted Gudfood Order"
     Caption = 'Posted Gudfood Order';
     PageType = Document;
     SourceTable = "Posted Gudfood Order Header";
-    UsageCategory = Documents;
+    UsageCategory = None;
     Editable = false;
 
 

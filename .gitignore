@@ -1,3 +1,5 @@
 .alpackages/
+
 *.app
+
 .vscode/

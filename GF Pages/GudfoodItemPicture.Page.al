@@ -1,4 +1,6 @@
 namespace ALProject.ALProject;
+using System.IO;
+using Gudfood.Gudfood;
 
 page 50106 "Gudfood Item Picture"
 {
@@ -22,4 +24,43 @@ page 50106 "Gudfood Item Picture"
             }
         }
     }
+    actions
+    {
+
+        area(Processing)
+        {
+
+            action(ImportPicture)
+            {
+                ApplicationArea = All;
+                Caption = 'Add image';
+                Image = Import;
+                ToolTip = 'Import a picture file.';
+
+                trigger OnAction()
+                var
+                    ImportFile: Codeunit "Import File";
+                begin
+                    ImportFile.ImportItemPicture(Rec);
+                end;
+
+            }
+            action(DeletePicture)
+            {
+                ApplicationArea = All;
+                Caption = 'Delete image';
+                Image = Delete;
+                ToolTip = 'Delete a picture of an item.';
+
+                trigger OnAction()
+                var
+                    ImportFile: Codeunit "Import File";
+                begin
+                    ImportFile.DeleteItem(Rec);
+                end;
+            }
+        }
+
+    }
+
 }

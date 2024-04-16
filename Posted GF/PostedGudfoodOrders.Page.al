@@ -7,7 +7,7 @@ page 50110 "Posted Gudfood Orders"
     Caption = 'Posted Gudfood Orders';
     PageType = List;
     SourceTable = "Posted Gudfood Order Header";
-    UsageCategory = Lists;
+    UsageCategory = History;
     CardPageId = "Posted Gudfood Order";
     Editable = false;
 
@@ -56,10 +56,12 @@ page 50110 "Posted Gudfood Orders"
                 field("No. Series"; Rec."No. Series")
                 {
                     ToolTip = 'Specifies the value of the No. Series field.';
+                    Visible = false;
                 }
                 field("Order No."; Rec."Order No.")
                 {
                     ToolTip = 'Specifies the value of the Order No. field.';
+                    Visible = false;
                 }
             }
         }
