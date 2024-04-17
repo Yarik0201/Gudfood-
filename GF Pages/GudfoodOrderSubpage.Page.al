@@ -26,14 +26,17 @@ page 50102 "Gudfood Order Subpage"
                 field("Sell- to Customer No."; Rec."Sell- to Customer No.")
                 {
                     ToolTip = 'Specifies the value of the Sell- to Customer No. field.';
+                    Visible = false;
                 }
                 field("Date Created"; Rec."Date Created")
                 {
                     ToolTip = 'Specifies the value of the Date Created field.';
+                    Visible = false;
                 }
                 field("Item No."; Rec."Item No.")
                 {
                     ToolTip = 'Specifies the value of the Item No. field.';
+                    ShowMandatory = true;
                 }
                 field("Item Type"; Rec."Item Type")
                 {
@@ -46,6 +49,7 @@ page 50102 "Gudfood Order Subpage"
                 field(Quantity; Rec.Quantity)
                 {
                     ToolTip = 'Specifies the value of the Quantity field.';
+                    NotBlank = true;
                 }
                 field("Unit Price"; Rec."Unit Price")
                 {

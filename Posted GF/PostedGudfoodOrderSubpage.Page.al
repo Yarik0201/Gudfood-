@@ -14,10 +14,6 @@ page 50108 "Posted Gudfood Order Subpage"
         {
             repeater(General)
             {
-                // field("Order No."; Rec."Order No.")
-                // {
-                //     ToolTip = 'Specifies the value of the Order No. field.';
-                // }
                 field("Line No."; Rec."Line No.")
                 {
                     ToolTip = 'Specifies the value of the Line No. field.';
@@ -25,10 +21,12 @@ page 50108 "Posted Gudfood Order Subpage"
                 field("Sell- to Customer No."; Rec."Sell- to Customer No.")
                 {
                     ToolTip = 'Specifies the value of the Sell- to Customer No. field.';
+                    Visible = false;
                 }
                 field("Date Created"; Rec."Date Created")
                 {
                     ToolTip = 'Specifies the value of the Date Created field.';
+                    Visible = false;
                 }
                 field("Item No."; Rec."Item No.")
                 {
