@@ -6,10 +6,11 @@ codeunit 50101 "Import File"
     var
         PicInStream: InStream;
         FromFileName: Text;
+        RepPic: Label 'The existing picture will be replaced. Do you want to continue?';
 
     begin
         if Item.Picture.HasValue() then
-            if not Confirm('The existing picture will be replaced. Do you want to continue?') then
+            if not Confirm(RepPic) then
                 exit;
 
         if File.UploadIntoStream('Import', '', 'All Files (*.*)|*.*',

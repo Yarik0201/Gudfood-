@@ -36,6 +36,7 @@ page 50110 "Posted Gudfood Orders"
                 field("Posting No."; Rec."Posting No.")
                 {
                     ToolTip = 'Specifies the value of the Posting No. field.';
+                    Visible = false;
                 }
                 field("Date Created"; Rec."Date Created")
                 {
